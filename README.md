@@ -41,7 +41,9 @@ Where:
 
 ## Photos
 
-
+![Screenshot 1](assets/p1.png)
+![Screenshot 2](assets/p2.png)
+![Screenshot 3](assets/rk.png)
 
 ---
 
