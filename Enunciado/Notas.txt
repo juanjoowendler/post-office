@@ -1,0 +1,33 @@
+---------- Notas -----------
+[!] [Duda] [1] : En la parte del enunciado donde dice textual, tras la corrección que tuvimos con el profe
+"Los tiempos de atención dependen de la experiencia del empleado si es aprendiz o experto (se debe  
+configurar cuantos servidores de cada tipo por servicio). Los mismos vienen dados también por R experto 
+es  100 y R aprendiz es 300. C es la cantidad de personas que hay en la cola del servicio."
+Si bien R es el valor q tomamos mediante la distribución uniforme, para que nos sirve la configuración de si el servidor
+es experto o aprendiz, porque si tenemos en cuenta eso cambia todo, ya que los cortes de en la EDO se basarían
+en cortar tras superar 300 (R) en caso de ser un empleado aprendiz o tras superar 100 (R) en caso de ser experto.
+
+[!] [Duda] [2] : En la ausencia de uno de los empleados de Envío de Paquetes tras una hora, consideramos un Estado más para ambos servidores, 
+por ejemplo, sabemos que tienen estados Libre (L) y Ocupado (O), pero deberíamos considerar un tercer estado que sea Ausente (A), porque en el caso de envio
+de paquetes al tener dos servidores tenemos 1 sola cola. En este caso si tenemos por ejemplo tras llegar a 1h
+y al estar procesando 1 cliente en un sv, mientras que en el otro se ausenta es decir SV1 (Estado: A) y SV2 (Estado: O), al llegar dos clientes 
+más en el intervalo del Reloj + 5m en lo que tarda en volver de (A -> L -> O) el SV1, la cola incrementaria en +2.
+Lo que queremos saber con esto es si es correcto, agregar un nuevo estado, además de que en el momento que SV1 o SV2 (Estado L/O -> A) el tiempo de espera
+dado el caso de que por ejemplo como anteriormente planteamos SV1 (A) SV2(O) Antes que SV1 (L/O -> A) si llegan dos clientes y se calculan sus respectivos
+tiempos de atención si SV1(A) pasa a ausente y el tiempo de atención era menor que el del cliente actual que procesa el SV2 hay q volver a hacer reloj + t_atención_estimado ??
+
+[!] [Duda] [3] :
+    [*] Tiempo de espera acum = Suma tiempo / cantidad de clientes que ingresaron a la cola o que finalizaron ?
+
+[!] [Duda] [4] : Para mostrar runge kutta, como prefiere que se lo mostremos, corte como lo hacemos en excel o con simplemente mostrarle la ultima iteración o qsy
+ Clientes | t | R
+ cliente 1 = 8.00 | 195.23 -> asi
+O todo es decir
+| t | R | k1 | x + h/2 | y + k1*h/2 | k2 | x + h/2 | y + k2*h/2 | k3 | x+h | y+k3*h | k4 |
+
+----- To Do ----------
+
+[✔️] Runge Kutta function + testing
+[x] Creación del vector estado + objetos XD
+[x] Carga del vector estado
+[x] 

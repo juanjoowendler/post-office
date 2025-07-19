@@ -39,6 +39,10 @@ Where:
 - Analyze the impact of server absences.
 - Apply a continuous model within a discrete simulation.
 
+## Photos
+
+
+
 ---
 
 **Note**: Developed for Lab Work #5 - Simulation Course (2025).
