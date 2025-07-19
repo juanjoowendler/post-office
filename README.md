@@ -45,6 +45,4 @@ Where:
 ![Screenshot 2](assets/p2.png)
 ![Screenshot 3](assets/rk.png)
 
----
 
-**Note**: Developed for Lab Work #5 - Simulation Course (2025).
